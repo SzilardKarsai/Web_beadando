@@ -38,6 +38,12 @@ a.active {
 main {
     padding: 20px;
 }
+aside {
+    float: right;
+    width: 160px;
+    margin: 0;
+    padding: 1em;
+}
 footer {
     background-color: #eee;
     text-align: center;
@@ -119,3 +125,28 @@ a {
     background-image: linear-gradient(#757575,#2e2e2e);
     color: #ffffff;
 }
+#drag1 {
+    width: 100px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #ffcc00;
+    border: 2px dashed #aa8800;
+    text-align: center;
+    cursor: grab;
+    border-radius: 8px;
+    box-shadow: 2px 2px 6px rgba(0,0,0,0.2);
+  }
+  #dropzone {
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    padding: 10px;
+    border: 3px dashed #333;
+    background-color: #f0f0f0;
+    text-align: center;
+    line-height: 80px;
+    font-weight: bold;
+    color: #555;
+    border-radius: 10px;
+    box-shadow: inset 0 0 8px rgba(0,0,0,0.1);
+  }

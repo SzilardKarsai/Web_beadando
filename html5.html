@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Webprogramozás beadandó</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Web-programozás-1 Előadás Házi feladat</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="tablazat.html">Táblázat</a></li>
+            <li><a href="html5.html" class="active">HTML5</a></li>
+            <li><a href="chartjs.html">ChartJS</a></li>
+            <li><a href="ajax.html">AJAX</a></li>
+            <li><a href="oojs.html">OOJS</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h1>HTML5</h1>
+        </aside>
+        <section>
+            <h2>Web Storage</h2>
+            <input type="text" id="storageInput" placeholder="Írj valamit...">
+            <button onclick="saveToStorage()">Mentés</button>
+            <p>Korábban mentett: <span id="storageOutput"></span></p>
+          </section>
+
+          <section>
+            <h2>Web Workers</h2>
+            <button onclick="startWorker()">Számolás indítása</button>
+            <button onclick="stopWorker()">Leállítás</button>
+            <p id="workerOutput">Eredmény: </p>
+          </section>
+
+          <section>
+            <h2>Server-Sent Events (Szimuláció)</h2>
+            <button onclick="startFakeSSE()">Start szimuláció</button>
+            <div id="sseOutput">Üzenetek:</div>
+          </section>
+
+          <section>
+            <h2>Geolocation API</h2>
+            <button onclick="getLocation()">Helyzet lekérése</button>
+            <p id="locationOutput">Helyzet: ?</p>
+          </section>
+
+          <section>
+            <h2>Drag and Drop API</h2>
+            <div id="drag1" draggable="true" ondragstart="drag(event)">🎈 Húzz el</div>
+            <div id="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">Ide dobd</div>
+          </section>
+
+          <section>
+            <h2>Canvas</h2>
+            <canvas id="myCanvas" width="300" height="150" style="border:1px solid #000;"></canvas>
+          </section>
+
+          <section>
+            <h2>SVG</h2>
+            <svg width="200" height="100">
+              <circle cx="100" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
+            </svg>
+          </section>
+    </main>
+    <footer>
+        <p>Készítette: Karsai Szilárd - V86G4L</p>
+    </footer>
+    <script src="js/html5.js"></script>
+</body>
+</html>
