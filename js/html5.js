@@ -1,4 +1,4 @@
-// Web Storage példa
+    // Web Storage példa
     function saveToStorage() {
         const input = document.getElementById("storageInput").value;
         localStorage.setItem("myText", input);
