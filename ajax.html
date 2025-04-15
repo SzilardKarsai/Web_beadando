@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <title>Webprogramozás beadandó</title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Web-programozás-1 Előadás Házi feladat</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Főoldal</a></li>
+            <li><a href="tablazat.html">Táblázat</a></li>
+            <li><a href="html5.html">HTML5</a></li>
+            <li><a href="chartjs.html">ChartJS</a></li>
+            <li><a href="ajax.html" class="active">AJAX</a></li>
+            <li><a href="oojs.html">OOJS</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h1>AJAX</h1>
+        </aside>
+        <section>
+            <h2>Adatok kezelése AJAX-szal</h2>
+
+            <form id="ajaxForm">
+                <input type="hidden" id="id">
+                <input type="text" id="name" placeholder="Név" required maxlength="30">
+                <input type="text" id="height" placeholder="Magasság (cm)" required maxlength="30">
+                <input type="text" id="weight" placeholder="Tömeg (kg)" required maxlength="30">
+                <button type="submit">Mentés (Create/Update)</button>
+              </form>
+
+              <button onclick="getData()">Adatok lekérése</button>
+              <input type="text" id="deleteId" placeholder="Törlendő ID">
+              <button onclick="deleteData()">Törlés</button>
+
+              <input type="text" id="getIdInput" placeholder="Módosítandó ID">
+              <button onclick="getDataForId()">Adat hívása módosításhoz</button>
+
+              <div id="output"></div>
+              <div id="summary"></div>
+        </section>
+    </main>
+    <footer>
+        <p>Készítette: Karsai Szilárd - V86G4L</p>
+    </footer>
+    <script src="js/ajax.js"></script>
+</body>
+</html>
