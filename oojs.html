@@ -19,21 +19,21 @@
             <li><a href="oojs.html" class="active">OOJS</a></li>
         </ul>
     </nav>
-    <main>
+    <div class="content">
         <aside>
             <h1>OOJS</h1>
         </aside>
-        <section>
+        <div class="page-block">
             <h2>Feladat hozzáadása</h2>
             <input type="text" id="taskInput" placeholder="Új feladat...">
-            <button onclick="todoApp.addTask()">Hozzáadás</button>
-        </section>
+            <button onclick="todoApp.addTask()" class="btn">Hozzáadás</button>
+        </div>
       
-        <section>
+        <div class="page-block">
             <h2>Feladatok</h2>
             <ul id="taskList"></ul>
-        </section>
-    </main>
+        </div>
+    </div>
     <footer>
         <p>Készítette: Karsai Szilárd - V86G4L</p>
     </footer>

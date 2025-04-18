@@ -19,11 +19,11 @@
             <li><a href="oojs.html">OOJS</a></li>
         </ul>
     </nav>
-    <main>
+    <div class="content">
         <aside>
             <h1>AJAX</h1>
         </aside>
-        <section>
+        <div class="page-block">
             <h2>Adatok kezelése AJAX-szal</h2>
 
             <form id="ajaxForm">
@@ -31,20 +31,20 @@
                 <input type="text" id="name" placeholder="Név" required maxlength="30">
                 <input type="text" id="height" placeholder="Magasság (cm)" required maxlength="30">
                 <input type="text" id="weight" placeholder="Tömeg (kg)" required maxlength="30">
-                <button type="submit">Mentés (Create/Update)</button>
+                <button type="submit" class="btn">Mentés (Create/Update)</button>
               </form>
 
-              <button onclick="getData()">Adatok lekérése</button>
+              <button onclick="getData()" class="btn">Adatok lekérése</button>
               <input type="text" id="deleteId" placeholder="Törlendő ID">
-              <button onclick="deleteData()">Törlés</button>
+              <button onclick="deleteData()" class="btn btn-danger">Törlés</button>
 
               <input type="text" id="getIdInput" placeholder="Módosítandó ID">
-              <button onclick="getDataForId()">Adat hívása módosításhoz</button>
+              <button onclick="getDataForId()" class="btn">Adat hívása módosításhoz</button>
 
               <div id="output"></div>
               <div id="summary"></div>
-        </section>
-    </main>
+        </div>
+    </div>
     <footer>
         <p>Készítette: Karsai Szilárd - V86G4L</p>
     </footer>
