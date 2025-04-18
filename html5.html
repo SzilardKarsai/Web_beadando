@@ -19,54 +19,54 @@
             <li><a href="oojs.html">OOJS</a></li>
         </ul>
     </nav>
-    <main>
+    <div class="content">
         <aside>
             <h1>HTML5</h1>
         </aside>
-        <section>
+          <div class="page-block">
             <h2>Web Storage</h2>
             <input type="text" id="storageInput" placeholder="Írj valamit...">
-            <button onclick="saveToStorage()">Mentés</button>
+            <button onclick="saveToStorage()" class="btn">Mentés</button>
             <p>Korábban mentett: <span id="storageOutput"></span></p>
-          </section>
+          </div>
 
-          <section>
+          <div class="page-block">
             <h2>Web Workers</h2>
-            <button onclick="startWorker()">Számolás indítása</button>
-            <button onclick="stopWorker()">Leállítás</button>
+            <button onclick="startWorker()" class="btn">Számolás indítása</button>
+            <button onclick="stopWorker()" class="btn">Leállítás</button>
             <p id="workerOutput">Eredmény: </p>
-          </section>
+          </div>
 
-          <section>
+          <div class="page-block">
             <h2>Server-Sent Events (Szimuláció)</h2>
-            <button onclick="startFakeSSE()">Start szimuláció</button>
+            <button onclick="startFakeSSE()" class="btn">Start szimuláció</button>
             <div id="sseOutput">Üzenetek:</div>
-          </section>
+          </div>
 
-          <section>
+          <div class="page-block">
             <h2>Geolocation API</h2>
-            <button onclick="getLocation()">Helyzet lekérése</button>
+            <button onclick="getLocation()" class="btn">Helyzet lekérése</button>
             <p id="locationOutput">Helyzet: ?</p>
-          </section>
+          </div>
 
-          <section>
+          <div class="page-block">
             <h2>Drag and Drop API</h2>
             <div id="drag1" draggable="true" ondragstart="drag(event)">🎈 Húzz el</div>
             <div id="dropzone" ondrop="drop(event)" ondragover="allowDrop(event)">Ide dobd</div>
-          </section>
+          </div>
 
-          <section>
+          <div class="page-block">
             <h2>Canvas</h2>
             <canvas id="myCanvas" width="300" height="150" style="border:1px solid #000;"></canvas>
-          </section>
+          </div>
 
-          <section>
+          <div class="page-block">
             <h2>SVG</h2>
             <svg width="200" height="100">
               <circle cx="100" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow" />
             </svg>
-          </section>
-    </main>
+          </div>
+     </div>
     <footer>
         <p>Készítette: Karsai Szilárd - V86G4L</p>
     </footer>
