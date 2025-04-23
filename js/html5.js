@@ -57,7 +57,7 @@
             document.getElementById("workerOutput").textContent = "Eredmény: " + event.data;
         };
         }
-        worker.postMessage("start"); // újraindítja a számlálást
+        worker.postMessage("start");
     } else {
         document.getElementById("workerOutput").textContent = "A böngésződ nem támogatja a Web Worker-eket.";
     }
